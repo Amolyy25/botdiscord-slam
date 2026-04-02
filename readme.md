@@ -1,5 +1,15 @@
 # Bienvenue sur le repos de mon bot discord pour un projet de cours !
 
+### Configuration :
+
+- Dans votre `.env` vous aurez besoin de :
+  - `TOKEN` : Le token de votre bot
+  - `CLIENT_ID` : L'id de votre bot
+  - `PREFIX` : le prefix de votre bot (exemple : `=`)
+  - `GUILD_ID` : Pas obligatoir mais mieux.
+
+_N'oubliez pas d'activer les 3 paramètres essentiels : Message Content Intent, Server Members Intent, et Privileged Gateway Intents dans les paramètres de votre bot sur le site de discord._
+
 ### Ce bot est capable de :
 
 - Savoir le nombre de boost d'un serveur
