@@ -18,11 +18,9 @@ _N'oubliez pas d'activer les 3 paramètres essentiels : Message Content Intent, 
 - Il est capable de crée un channel vocal, qui affiche le nombre de boost, membre ou personne en vocal.
 - Il est doté d'une commande utilitaire `find`, qui va chercher un utilisateur, et donnée dans quelle salon vocal il est (si il est en vocal), et le dernier message envoyée.
 - EVidement la commande `ping` existe, permet de savoir la latense du bot.
-
-### Prochainement :
-
 - Commande `pic`, permet d'afficher la photo de profil d'un utilisateur
 - Commande `banner`, permet d'afficher la bannière d'un utilisateur.
+- Commande `/meteo`, permet d'avoir la méteo dans une ville précise.
 
 Par Amaury Meiller, dev en moin de 20 heures. <3
 
