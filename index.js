@@ -14,6 +14,7 @@ import { fileURLToPath } from "node:url";
 import { handleFindCommand } from "./commands/find.js";
 import { handleMembersCommand } from "./commands/members.js";
 import { handlePicCommand } from "./commands/pic.js";
+import { handleBannerCommand } from "./commands/banner.js";
 
 const TOKEN = process.env.TOKEN;
 const PREFIX = process.env.PREFIX || "=";
@@ -87,6 +88,11 @@ client.on(Events.MessageCreate, async (message) => {
   if (commandName === "pic") {
     const member = message.member;
     await handlePicCommand(message, args);
+    return;
+  }
+   if (commandName === "banner") {
+    const member = message.member;
+    await handleBannerCommand(message, args);
     return;
   }
 });
