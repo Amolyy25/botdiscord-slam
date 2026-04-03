@@ -16,6 +16,7 @@ import { handleMembersCommand } from "./commands/members.js";
 import { handlePicCommand } from "./commands/pic.js";
 import { handleBannerCommand } from "./commands/banner.js";
 import { handleClearCommand } from "./commands/clear.js";
+import { ActivityType } from "discord.js";
 
 const TOKEN = process.env.TOKEN;
 const PREFIX = process.env.PREFIX || "=";
@@ -46,6 +47,7 @@ const client = new Client({
     GatewayIntentBits.GuildVoiceStates,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildPresences,
   ],
 });
 
@@ -119,6 +121,7 @@ client.setGuildCounter = (guild, field, value) =>
   setGuildCounter(guild, field, value);
 
 client.once(Events.ClientReady, (readyClient) => {
+  client.user.setActivity('.gg/Olympe', { type: ActivityType.Streaming, url: 'https://twitch.tv/Olympe' });
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 });
 

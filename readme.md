@@ -23,6 +23,11 @@ _N'oubliez pas d'activer les 3 paramètres essentiels : Message Content Intent, 
 - Commande `/meteo`, permet d'avoir la méteo dans une ville précise.
 - Commande `clear`, permet de supprimer un nombre de message.
 
+### Fonction du bot par défaut
+
+- Il peut vous attribuez un rôle en fonction de votre status discord
+- Il a un status twitch, qui redirige vers le discord (.gg/olympe)
+
 Par Amaury Meiller, dev en moin de 20 heures. <3
 
 Le bot s'appelle "Olympe".
