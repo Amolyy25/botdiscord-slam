@@ -15,6 +15,7 @@ import { handleFindCommand } from "./commands/find.js";
 import { handleMembersCommand } from "./commands/members.js";
 import { handlePicCommand } from "./commands/pic.js";
 import { handleBannerCommand } from "./commands/banner.js";
+import { handleClearCommand } from "./commands/clear.js";
 
 const TOKEN = process.env.TOKEN;
 const PREFIX = process.env.PREFIX || "=";
@@ -83,6 +84,20 @@ client.on(Events.MessageCreate, async (message) => {
       return;
     }
     await handleMembersCommand(message);
+    return;
+  }
+  if (commandName === "clear") {
+    const member = message.member;
+    if (!member.roles.cache.has("1488889893957533917")) {
+      const errorreply = new EmbedBuilder()
+        .setColor(0xffffff)
+        .setDescription(
+          `***Cette commande nécessite minimum la perm <@&1488889893957533917>***`,
+        );
+      message.reply({ embeds: [errorreply] });
+      return;
+    }
+    await handleClearCommand(message, args);
     return;
   }
   if (commandName === "pic") {

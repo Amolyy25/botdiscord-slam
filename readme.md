@@ -21,6 +21,7 @@ _N'oubliez pas d'activer les 3 paramètres essentiels : Message Content Intent, 
 - Commande `pic`, permet d'afficher la photo de profil d'un utilisateur
 - Commande `banner`, permet d'afficher la bannière d'un utilisateur.
 - Commande `/meteo`, permet d'avoir la méteo dans une ville précise.
+- Commande `clear`, permet de supprimer un nombre de message.
 
 Par Amaury Meiller, dev en moin de 20 heures. <3
 
