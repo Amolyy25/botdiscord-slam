@@ -28,7 +28,7 @@ _N'oubliez pas d'activer les 3 paramètres essentiels : Message Content Intent, 
 - Il peut vous attribuez un rôle en fonction de votre status discord
 - Il a un status twitch, qui redirige vers le discord (.gg/olympe)
 
-Par moi même, dev en moin de 20 heures. <3
+Par moi même, dev en moin de 10 heures. <3
 
 Le bot s'appelle "Olympe".
 
