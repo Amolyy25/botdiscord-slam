@@ -17,6 +17,7 @@ import { handlePicCommand } from "./commands/pic.js";
 import { handleBannerCommand } from "./commands/banner.js";
 import { handleClearCommand } from "./commands/clear.js";
 import { ActivityType } from "discord.js";
+import { handleRenewCommand} from "./commands/renew.js";
 
 const TOKEN = process.env.TOKEN;
 const PREFIX = process.env.PREFIX || "=";
@@ -100,6 +101,11 @@ client.on(Events.MessageCreate, async (message) => {
       return;
     }
     await handleClearCommand(message, args);
+    return;
+  }
+  if (commandName === "renew") {
+    const member = message.member;
+    await handleRenewCommand(message);
     return;
   }
   if (commandName === "pic") {
